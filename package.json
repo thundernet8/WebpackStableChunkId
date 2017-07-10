@@ -1,0 +1,15 @@
+{
+    "name": "webpackstablechunkid",
+    "version": "0.0.1",
+    "description": "Keep chunk order defined in entry config, which result in stability of chunkhash",
+    "main": "./lib/index.js",
+    "scripts": {
+        "build": "tsc"
+    },
+    "repository": "git@github.com:thundernet8/WebpackStableChunkId.git",
+    "author": "吴学谦 <wuxueqian@ezbuy.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@types/node": "^8.0.9"
+    }
+}
