@@ -1,15 +1,21 @@
 {
     "name": "webpackstablechunkid",
-    "version": "0.0.1",
-    "description": "Keep chunk order defined in entry config, which result in stability of chunkhash",
+    "version": "0.1.0",
+    "description":
+        "Keep chunk order defined in entry config, which result in stability of chunkhash",
     "main": "./lib/index.js",
     "scripts": {
-        "build": "tsc"
+        "build": "rimraf lib && tsc",
+        "prepublish": "npm run build"
     },
     "repository": "git@github.com:thundernet8/WebpackStableChunkId.git",
-    "author": "吴学谦 <wuxueqian@ezbuy.com>",
+    "author": "wuxueqian <wuxueqian2010@hotmail.com>",
     "license": "MIT",
     "dependencies": {
         "@types/node": "^8.0.9"
+    },
+    "devDependencies": {
+        "rimraf": "^2.6.2",
+        "typescript": "^2.6.1"
     }
 }
