@@ -1,6 +1,6 @@
 // keep chunk order defined in entry config
 
-export default class WebpackStableChunkId {
+class WebpackStableChunkId {
     public options: any;
 
     constructor(options) {
@@ -20,3 +20,5 @@ export default class WebpackStableChunkId {
         });
     };
 }
+
+module.exports = WebpackStableChunkId;

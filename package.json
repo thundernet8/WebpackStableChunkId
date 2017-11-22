@@ -1,6 +1,6 @@
 {
     "name": "webpackstablechunkid",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description":
         "Keep chunk order defined in entry config, which result in stability of chunkhash",
     "main": "./lib/index.js",

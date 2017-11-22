@@ -1,21 +1,19 @@
 {
     "compilerOptions": {
+        "strictNullChecks": true,
+        "module": "commonjs",
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
-        "allowJs": true,
-        "target": "es5",
-        "lib": ["es2016"],
-        "module": "commonjs",
-        "noImplicitAny": false,
-        "removeComments": true,
-        "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "baseUrl": "./src",
-        "strictNullChecks": false,
+        "noUnusedParameters": true,
         "noUnusedLocals": true,
-        "outDir": "./lib"
+        "target": "es5",
+        "lib": ["dom", "es7", "es2015"],
+        "outDir": "./lib",
+        "typeRoots": ["node_modules/@types", "typings"],
+        "baseUrl": "./",
+        "allowJs": true,
+        "removeComments": true
     },
-    "include": ["./src/**/*.ts", "./src/*.d.ts"],
-    "exclude": ["node_modules", "**/*.spec.ts?", "lib"],
-    "typeRoots": ["node_modules/@types"]
+    "exclude": ["node_modules", "dist", "tests", "demo", "**/*.d.ts"]
 }
